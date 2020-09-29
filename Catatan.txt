@@ -1,0 +1,9 @@
+Plugin Tambahan:
+1. Editor teks WYSIWYG
+composer require 2amigos/yii2-tinymce-widget:~1.1
+
+2. Date Picker
+composer require --prefer-dist yiisoft/yii2-jui
+
+3. Kartik Dateppicker
+langsung copy "kartik-v/yii2-widget-datepicker": "@dev" ke comploser.json, => composer update 
