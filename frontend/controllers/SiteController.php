@@ -140,10 +140,9 @@ class SiteController extends Controller
 			return $this->redirect('https://webapps.bps.go.id/riau/sso/index.php?aplikasi='.$url);        
         }       
         $text = Yii::$app->request->get('token');
-        // $text="MzQwMDE5MTQ4fERhZGFuZyBTdW5hbmRhcnxkYWRhbmdzdW5hbmRhckBicHMuZ28uaWR8ZGFkYW5nc3VuYW5kYXJ8MTk4MzExMDgyMDA3MDExMDA0fDE0MDAwMDA5MjYyMHwxNHwwMHxKbC4gUGF0dGltdXJhIE5vLiAxMnxSaWF1fFByb3YuIFJpYXV8SUlJL2R8S2VwYWxhIFNla3NpIEphcmluZ2FuIGRhbiBSdWp1a2FuIFN0YXRpc3Rpa3xodHRwczovL2NvbW11bml0eS5icHMuZ28uaWQvaW1hZ2VzL2F2YXRhci8xOTE0OC5KUEd8NA==";
 		
-		$a = explode("|",base64_decode($text));
-		$nip = $a[0];
+	$a = explode("|",base64_decode($text));
+	$nip = $a[0];
         $nama = $a[1];					
         $email = $a[2]; 
         $username = $a[3]; 
